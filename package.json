@@ -1,0 +1,17 @@
+{
+  "name": "api_restful_rafafrassetto",
+  "version": "1.0.0",
+  "description": "API RESTful utilizando dados da API pública TheMealDB",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Nenhum teste especificado\" && exit 0"
+  },
+  "keywords": ["API", "RESTful", "TheMealDB", "Node.js", "Express"],
+  "author": "Rafa Frassetto",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.0"
+  }
+}

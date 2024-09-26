@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Frassetto Pereira - API RESTFUL </title>
+</head>
+<body>
+    <h1>Adicionar Refeição</h1>
+    <form id="mealForm">
+        <label for="strMeal">Nome da Refeição:</label>
+        <input type="text" id="strMeal" name="strMeal" required>
+        <br>
+        <label for="strMealThumb">URL da Imagem:</label>
+        <input type="text" id="strMealThumb" name="strMealThumb" required>
+        <br>
+        <button type="submit">Adicionar Refeição</button>
+    </form>
+
+    <h2>Refeições Adicionadas:</h2>
+    <ul id="mealsList"></ul>
+
+    <button onclick="window.location.href='http://localhost:8080/meals'">Ver API pública com as Refeições Originais e Refeições Adicionadas</button>
+    <button onclick="window.location.href='http://localhost:8080/sobre'">Rota /Sobre</button>
+    <button onclick="window.location.href='https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian'">Link para API pública utilizada</button>
+
+    <script>
+        document.getElementById('mealForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const strMeal = document.getElementById('strMeal').value;
+            const strMealThumb = document.getElementById('strMealThumb').value;
+
+            const response = await fetch('http://localhost:8080/meals', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ strMeal, strMealThumb })
+            });
+
+            if (response.ok) {
+                alert('Refeição adicionada com sucesso!');
+                loadMeals();
+            } else {
+                alert('Erro ao adicionar a refeição.');
+            }
+        });
+
+        async function loadMeals() {
+            const response = await fetch('http://localhost:8080/meals');
+            const meals = await response.json();
+            const mealsList = document.getElementById('mealsList');
+            mealsList.innerHTML = '';
+            meals.forEach(meal => {
+                const li = document.createElement('li');
+                li.textContent = `${meal.strMeal} - ${meal.strMealThumb}`;
+                mealsList.appendChild(li);
+            });
+        }
+        loadMeals();
+    </script>
+</body>
+</html>
