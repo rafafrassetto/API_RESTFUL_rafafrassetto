@@ -66,13 +66,13 @@ Retorna informações sobre o desenvolvedor e o projeto.
 C:\
 └── API_RESTFUL_rafafrassetto\
     ├── public\
-    │   └── index.html -> Página para a visualização e adição de novas refeições.
+    │   └── index.html -> (Página para a visualização e adição de novas refeições.)
     └── src\
         ├── controllers\
-        │   └── mealController.js -> Arquivo para controlar as requisições recebidas e usar o serviço para lidar com os dados.
+        │   └── mealController.js -> (Arquivo para controlar as requisições recebidas e usar o serviço para lidar com os dados.)
         └── services\
-            └── mealService.js -> Serviço responsável por fazer chamadas à API externa, neste caso, a TheMealDB.
-        ├── app.js -> Arquivo para inicializar o servidor e definir as rotas para requisições GET e POST.
+            └── mealService.js -> (Serviço responsável por fazer chamadas à API externa, neste caso, a TheMealDB.)
+        ├── app.js -> (Arquivo para inicializar o servidor e definir as rotas para requisições GET e POST.)
     ├── .gitignore
     ├── docker-compose.yml  
     ├── Dockerfile
