@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # API_RESTFUL_rafafrassetto
 =======
 # API RESTful - Rafael Frassetto Pereira
@@ -94,3 +95,7 @@ C:\
 
 
 >>>>>>> master
+=======
+# API_RESTFUL_rafafrassetto
+Projeto Referente a matéria de Back End
+>>>>>>> 963d4ecfb35c25517cd8f3a383ea0a7105ae7e6e
