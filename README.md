@@ -4,7 +4,13 @@
 
 Este é um projeto de API RESTful que permite adicionar e visualizar refeições de um cardápio utilizando a API pública TheMealDB. A aplicação é construída com Node.js e Express, e pode ser executada em um container Docker.
 
+Link para a API pública utilizada : https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian
+
 # Vídeo Demonstrativo :
+
+
+
+https://github.com/user-attachments/assets/686f7230-4704-4afc-856c-cd75a3b810cf
 
 
 
