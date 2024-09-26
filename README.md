@@ -38,6 +38,11 @@ https://github.com/user-attachments/assets/686f7230-4704-4afc-856c-cd75a3b810cf
 
 # Rotas :
 
+- http://localhost:8080 (Rota contendo o index para o direcionamento para a visualização e adição de refeições ao cardápio)
+- http://localhost:8080/meals (Rota para visualizar a API pública com as Refeições Originais e Refeições que poderão ser Adicionadas
+- http://localhost:8080/sobre (Rota com o informações referentes ao desenvolvedor)
+
+
 ## GET (/meals)
 
 - Retorna uma lista de refeições, combinando as refeições da API externa com as refeições adicionadas.
