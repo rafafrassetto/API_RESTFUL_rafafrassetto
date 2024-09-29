@@ -36,6 +36,23 @@ https://github.com/user-attachments/assets/686f7230-4704-4afc-856c-cd75a3b810cf
 
 4. **Acesse a aplicação em :**  http://localhost:8080
 
+## Como Executar Caso Deseje Utilizar Docker Desktop 
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/rafafrassetto/API_RESTFUL_rafafrassetto.git
+   cd API_RESTFUL_rafafrassetto
+
+2. **Navegue até a pasta do projeto.**
+
+3. **Abra o aplicativo Docker Desktop**
+
+4. **Construa e inicie o projeto em um container Docker:**
+   ```bash
+   docker-compose up --build
+   
+5.**Acesse a aplicação em :**  http://localhost:8080
+
 # Rotas :
 
 - http://localhost:8080 (Rota contendo o index para o direcionamento para a visualização e adição de refeições ao cardápio)
