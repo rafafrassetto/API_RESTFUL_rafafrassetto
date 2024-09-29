@@ -51,7 +51,7 @@ https://github.com/user-attachments/assets/686f7230-4704-4afc-856c-cd75a3b810cf
    ```bash
    docker-compose up --build
    
-5.**Acesse a aplicação em :**  http://localhost:8080
+5. **Acesse a aplicação em :**  http://localhost:8080
 
 # Rotas :
 
